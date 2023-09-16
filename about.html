@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="test3.png" type="image/gif">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="sign up.css">
+    <title>Quick Food - About Us</title>
+</head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   
+<style>
+  .wrapper
+  {
+     position: absolute;
+     margin-top: 400px;
+     margin-left: 50%;
+     width: 500px;
+     padding: 40px;
+     transform: translate(-50%, -50%);
+     background: rgba(0,0,0,.7);
+     box-sizing: border-box;
+     box-shadow: 0 15px 25px rgba(0,0,0,.6);
+     border-radius: 10px;
+
+  }
+  .wrapper img{
+    margin-left: 20px;
+  }
+  
+  @media screen and (max-width: 700px) {
+ 
+ .wrapper
+  {
+     position: absolute;
+     margin-top: 400px;
+     margin-left: 50%;
+     width: 60%;
+     padding: 40px;
+     transform: translate(-50%, -50%);
+     background: rgba(0,0,0,.7);
+     box-sizing: border-box;
+     box-shadow: 0 15px 25px rgba(0,0,0,.6);
+     border-radius: 10px;
+
+  }
+ }
+ </style>
+<body>
+
+  <div class="header" id="head">
+    <a href="home.html" ><img src="test3.png"  title="Quick Food"></a>
+    <a ><h1>ABOUT US</h1></a>
+</div>
+
+</div>
+<div class="sidebar">
+<ul>
+<div class="contents">
+<li><a href="home.html">HOME</a></li>
+<li><a href="services.html">SERVICES</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+<li><a href="cart.html" ><i class='fas fa-cart-plus'></i> Cart</a></li>
+    </div>
+</ul>
+</div>
+<div class="rest">
+  <div class="column" style="width: 100%;margin-left: 0;">
+    <div class="card">
+      <img src="veg1.jpg" alt="Quick Food" style="width:100%">
+      <div class="container">
+        <h2 style="color: #03e9f4;">Food Is An Important Part Of A Balanced Diet</h2>
+        <p>Our Cuisines are freshly made and no frozen ingredients are used in making them. As we belive freshly used ingredients are more tasty as compared to frozen ones. Quality has always been our priority and thus you'll find our food very irresistible.   </p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <h2 style="text-align:center;font-size: 45px;">Founder</h2>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="ashhh.jpeg" alt="Suhani" style="width:100%">
+      <div class="container">
+        <h2>Suhani Sinha</h2>
+        <p class="title">Frontend Developer</p>
+        <p>Highly skilled Frontend Developer, seeking to use proven skills in Frontend web development to enhance user experience at creative web pages. Deployed new features with high responsiveness and performance. Completed job in 3 days.</p>
+        <p><a href="suhanisinha31558@gmail.com">EMAIL</a></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+      </div>
+     
+
+</div>
+<button onclick="topFunction()" id="toTop" title="Go to top"><i class="fas fa-hamburger"></i></button>
+</div>
+
+<div class="footer">
+    <a href="home.html" ><img src="test3.png"  title="Quick Food"></a>
+    <a ><h1>© 2023 Quick Food || Suhani Sinha</h1></a>
+    <a href="" id="ic"><i class="fab fa-facebook-f"></i></a>
+    <a href="" id="ic"><i class="fab fa-twitter"></i></a>
+    <a href="" id="ic"><i class="fab fa-google-plus-g"></i></a>
+      
+</div>
+
+</body>
+</html>
+
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("toTop");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("head").style.backgroundColor = "rgb(65, 62, 62)";
+        mybutton.style.display = "block";
+      } else {
+        document.getElementById("head").style.backgroundColor = "rgb(65, 62, 62,0)";
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    

@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  background-image: url('back10(gaya3).jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.wrapper{
+  width:950px;
+  margin:100px auto;
+}
+.title{
+  width: 100%;
+  margin-bottom:60px;
+  color: white;
+}
+.title h4{
+  text-transform:capitalize;
+  font-size:36px;
+  position:relative;
+  display:inline-block;
+  padding-bottom:10px;
+}
+
+.title h4 span{
+  display:block;
+  font-size:18px;
+  font-style:italic;
+  margin-bottom:10px;
+}
+.title h4:before{
+  position:absolute;
+  content:"";
+  width:100px;
+  height:2px;
+  background-color:cyan;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+.menu{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.menu-content p{
+  font-size: 15px;
+}
+.single-menu{
+  flex-basis:450px;
+  margin-bottom:40px;
+  padding-bottom:40px;
+  width: 350px;
+}
+.single-menu:nth-child(5), .single-menu:nth-child(6){
+  border-bottom:0;
+}
+.single-menu{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  color:white;
+}
+.single-menu:hover img{
+  border-radius:0;
+  opacity: 1;
+}
+.single-menu img{
+  width:200px;
+  height:150px;
+  margin-right:10px;
+  border-radius:50%;
+  border:1px solid cyan;
+  padding:3px;
+  transition:.5s;
+  opacity: 0.6;
+}
+.single-menu h4{
+  text-transform:capitalize;
+  font-size:17px;
+  border-bottom:1px dashed #333;
+  margin-bottom:5px;
+  padding-bottom:5px;
+}
+.single-menu h4 span{
+  float:right;
+  color:cyan;
+  font-style:italic;
+}
+  #mySearch {
+    width: 20%;
+    height: 30px;
+    float:right;
+    font-size: 18px;
+    padding: 11px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  .navbar{
+    width: 100%;
+    height:40px;
+    font-size: large;
+    /* background-color: aqua; */
+    /* position: fixed; */
+}
+  .navbar2{
+      width: 100%;
+      height:80px;
+      margin-right: 8%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      /* position: fixed; */
+  }
+  .navbar2 a {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    text-decoration: none;
+    background-color:black; 
+    opacity: 0.6;
+  }
+  .navbar2 img{
+    border-radius: 50%;
+  }
+  .navbar2 a:hover {
+    background-color: #717171;
+    opacity:1 ;
+  }
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .slideshow-container img{
+      width: 150px;
+      height: 400px;
+      border-radius: 20px;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 10px;
+    width: 10px;
+    
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+  .starters img {
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    float: left;
+    width:90%;
+    height: 90%;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container h4{
+    color: blue;
+    font-size: 15px;
+}
+.row{
+    display: flex;
+    text-align: center;
+}
+.col{
+    flex: 50%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    border-radius: 5px;
+  }
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:cyan;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  .text {font-size: 11px}
+  .wrapper
+  {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+  .single-menu img{
+    width:100px;
+    height: 80px;
+  }
+  .slideshow-container img{
+      width: 60px;
+      height: 160px;
+      border-radius: 20px;
+  }
+  .navbar2 img{
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+  }
+  .navbar2 {
+    margin-left:0% ;
+    width: 100%;
+  }
+  .navbar2 a{
+    width: 100%;
+  }
+  .menu{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+  }
+  .single-menu{
+    flex-basis:500px;
+    flex-direction: column;
+  }
+  .menu h4, span{
+    font-size: 12px;
+  }
+  .menu-content
+  {
+    font-size: 10px;
+  }
+  .title h4
+  {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar2 {
+    margin-left:30% ;
+  }
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: black; 
+  color: white; 
+  border: 2px solid cyan;
+}
+
+.button1:hover {
+  background-color: cyan;
+  color: black;
+}
